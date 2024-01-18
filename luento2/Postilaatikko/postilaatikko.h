@@ -8,9 +8,9 @@ class Postilaatikko
 {
 public:
     Postilaatikko();
+		~Postilaatikko();
 
     string nimi;
-    string osoite;
 
     void lisaaPosti(int maara);
     void otaPosti(int maara);

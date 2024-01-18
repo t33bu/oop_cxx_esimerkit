@@ -5,11 +5,10 @@ using namespace std;
 
 int main()
 {
-    Postilaatikko pl1;
-    Postilaatikko pl2;
+    Postilaatikko pl;
 
-    pl1.lisaaPosti(5);
-    pl1.otaPosti(1);
+    pl.lisaaPosti(5);
+    pl.otaPosti(1);
 
     return 0;
 }

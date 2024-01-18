@@ -7,6 +7,11 @@ Postilaatikko::Postilaatikko()
     cout << "maara on " << maara << endl;
 }
 
+Postilaatikko::~Postilaatikko() 
+{
+	cout << "tuhotaan Postilaatikko" << endl;
+}
+
 void Postilaatikko::lisaaPosti(int m)
 {
     cout << "lisataan postia " << m << endl;
@@ -24,5 +29,7 @@ void Postilaatikko::otaPosti(int m)
 void Postilaatikko::asetaNimi(string n)
 {
     cout << "ollaan asetaNimi";
+		nimi = n;
+		cout << "asukkaan nimi on " << nimi << endl;
 }
 
