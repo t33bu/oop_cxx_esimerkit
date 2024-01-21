@@ -9,3 +9,6 @@ Postilaatikko - Luentokalvoissa esitelty Postilaatikko-luokka
 
 Mittari - Luentokalvoissa esitelty Mittari-luokka, sisältäen DHT- ja LCD-luokat
 
+Testiluokka - Esimerkki konstruktorista jolle annetaan parametrejä
+
+
