@@ -11,7 +11,14 @@ Mittari - Luentokalvoissa esitelty Mittari-luokka, sisältäen DHT- ja LCD-luoka
 
 Testiluokka - Esimerkki konstruktorista jolle annetaan parametrejä
 
-## Luento 4 (to 1.2..2024)
+## Luento 3 (to 26.1.2024)
+Mittariperinta - Luentoesimerkki toteutettuna periytymisen avulla
+
+Perintaesimerkki - Yleinen esimerkki luokkien periytymisestä
+
+Virtuaalijasen - Esimerkki virtuaalisesta jäsenfunktiosta luokassa
+
+## Luento 4 (to 1.2.2024)
 ViittausMittari - Olioiden yhteistyö viittausten avulla
 
 Parametrikonstruktorit - Esimerkkejä konstruktoriparametrien välityksestä yliluokalle
