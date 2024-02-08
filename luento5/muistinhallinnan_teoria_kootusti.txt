@@ -1,0 +1,19 @@
+Muistinhallinnan teoria koostusti:
+
+Muisti jaetaan siis staattiseen ja dynaamiseen osioon.
+
+Staattinen osio koostuu pinosta (stack) ja staattisesta muistialueesta (static). Kumpaan osioon muuttuja päätyy, riippuu sen "olemassaolosta" (scope) käännösaikana. Yleissäännöt:
+- Funktioiden parametrit ja lokaalit muuttujat päätyvät ensisijaisesti stackiin. Ne ovat olemassa vain kun funktiota käytetään. (Luentoesimerkeissä suurin osa muuttujista oli siis staattisella alueella, mutta itseasiassa stackissa.)
+- static-avainsanalla voi määrätä muuttujan tai olion aina staattiselle muistialueelle. Staattinen muuttuja on olemassa koko ohjelman elinajan.
+- Globaalit muuttujat ovat staattisella muistialueella. Näitä ei olio-ohjelmoinnissa juuri käytetä, parempi "kapseloida" lokaalit muuttujat luokan sisään. 
+
+Dynaamisessa osiossa muistialue täytyy varata ohjelman ajonaikana.
+- Käytetään new- ja delete-operaattoreita.
+- Smart pointterit helpottaa muistinhallintaa automatisoimalla toimintoja ja niitä on erityyppisiä.
+
+Olioiden jäsenmuuttujat sijoittuvat sinne muistialueelle minne itse oliokin sijoittuu, elleivät jäsenet ole dynaamisesti varattuja tai määritelty static-avainsanalla.
+
+Lisätietoa:
+https://faculty.cs.niu.edu/~mcmahon/CS241/Notes/storage_class.html
+https://en.cppreference.com/w/cpp/language/storage_duration
+
