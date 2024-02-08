@@ -23,3 +23,10 @@ ViittausMittari - Olioiden yhteistyö viittausten avulla
 
 Parametrikonstruktorit - Esimerkkejä konstruktoriparametrien välityksestä yliluokalle
 
+## Luento 5 (to 8.2.2024)
+OsoitinMittari - Mittari-esimerkin koosteolioiden toteutus dynaamiseen muistiin
+
+Muistinhallintaa - Koodiesimerkkejä osoittimien käytöstä
+
+VakioPostilaatikko - Postilaatikko-luentoesimerkin toteutus static-jäsenillä
+
