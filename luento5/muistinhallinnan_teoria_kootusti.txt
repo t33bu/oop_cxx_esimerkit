@@ -7,7 +7,7 @@ Staattinen osio koostuu pinosta (stack) ja staattisesta muistialueesta (static).
 - static-avainsanalla voi määrätä muuttujan tai olion aina staattiselle muistialueelle. Staattinen muuttuja on olemassa koko ohjelman elinajan.
 - Globaalit muuttujat ovat staattisella muistialueella. Näitä ei olio-ohjelmoinnissa juuri käytetä, parempi "kapseloida" lokaalit muuttujat luokan sisään. 
 
-Dynaamisessa osiossa muistialue täytyy varata ohjelman ajonaikana.
+Dynaamisessa osiossa (keko, engl. heap) muistialue täytyy varata ja vapauttaa ohjelman ajonaikana.
 - Käytetään new- ja delete-operaattoreita.
 - Smart pointterit helpottaa muistinhallintaa automatisoimalla toimintoja ja niitä on erityyppisiä. unique_ptr-templatea on syytä käyttää ellei tiedä mitä on tekemässä. 
 
