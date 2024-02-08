@@ -9,7 +9,7 @@ Staattinen osio koostuu pinosta (stack) ja staattisesta muistialueesta (static).
 
 Dynaamisessa osiossa muistialue täytyy varata ohjelman ajonaikana.
 - Käytetään new- ja delete-operaattoreita.
-- Smart pointterit helpottaa muistinhallintaa automatisoimalla toimintoja ja niitä on erityyppisiä.
+- Smart pointterit helpottaa muistinhallintaa automatisoimalla toimintoja ja niitä on erityyppisiä. unique_ptr-templatea on syytä käyttää ellei tiedä mitä on tekemässä. 
 
 Olioiden jäsenmuuttujat sijoittuvat sinne muistialueelle minne itse oliokin sijoittuu, elleivät jäsenet ole dynaamisesti varattuja tai määritelty static-avainsanalla.
 
