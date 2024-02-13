@@ -30,3 +30,11 @@ Muistinhallintaa - Koodiesimerkkejä osoittimien käytöstä
 
 VakioPostilaatikko - Postilaatikko-luentoesimerkin toteutus static-jäsenillä
 
+## Luento 6 (to 15.2.2024)
+QtConsoleExample - Qt-konsolisovellus joka ei tee mitään
+
+QtEkaSignal - Qt-olio lähettää signaalin itselleen
+
+QtTokaSignal - Qt-oliot lähettävät signaaleja toisilleen
+
+QtMittari - Perinteinen Mittari-esimerkki toteutettuna signal/slot-mekanismillä
