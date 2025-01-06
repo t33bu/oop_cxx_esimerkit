@@ -1,36 +1,41 @@
 # Olio-ohjelmoinnin luentoesimerkit
-Esimerkkikoodit luennoilta
+Esimerkkikoodit luennoilta. 
 
-## Luento 1 (to 11.1.2024)
+`Hox! Esimerkit päivittyvät kurssin edetessä.`
+
+## Luento 1 (ti 7.1.2025)
 viikkotehtava1.cpp - Esimerkki miten satunnaislukugeneraattori alustetaan ja käytetään
 
-## Luento 2 (to 18.1.2024)
+## Luento 2 (ma 13.1.2025)
 Postilaatikko - Luentokalvoissa esitelty Postilaatikko-luokka
 
 Mittari - Luentokalvoissa esitelty Mittari-luokka, sisältäen DHT- ja LCD-luokat
 
 Testiluokka - Esimerkki konstruktorista jolle annetaan parametrejä
 
-## Luento 3 (to 25.1.2024)
+## Luento 3 (ma 20.1.2025)
 Mittariperinta - Luentoesimerkki toteutettuna periytymisen avulla
 
 Perintaesimerkki - Yleinen esimerkki luokkien periytymisestä
 
 Virtuaalijasen - Esimerkki virtuaalisesta jäsenfunktiosta luokassa
 
-## Luento 4 (to 1.2.2024)
+## Luento 4 (ma 27.1.2025)
 ViittausMittari - Olioiden yhteistyö viittausten avulla
 
 Parametrikonstruktorit - Esimerkkejä konstruktoriparametrien välityksestä yliluokalle
 
-## Luento 5 (to 8.2.2024)
+## Luento 5 (ma 3.2.2025)
 OsoitinMittari - Mittari-esimerkin koosteolioiden toteutus dynaamiseen muistiin
 
 Muistinhallintaa - Koodiesimerkkejä osoittimien käytöstä
 
 VakioPostilaatikko - Postilaatikko-luentoesimerkin toteutus static-jäsenillä
 
-## Luento 6 (to 15.2.2024)
+## Luento 6 (ma 10.2.2025)
+
+`Tämä osio tulee muuttumaan..` 
+
 QtConsoleExample - Qt-konsolisovellus joka ei tee mitään
 
 QtEkaSignal - Qt-olio lähettää signaalin itselleen
@@ -38,3 +43,12 @@ QtEkaSignal - Qt-olio lähettää signaalin itselleen
 QtTokaSignal - Qt-oliot lähettävät signaaleja toisilleen
 
 QtMittari - Perinteinen Mittari-esimerkki toteutettuna signal/slot-mekanismillä
+
+## Luento 7 (ma 17.2.2025)
+
+`TODO` 
+
+## Luento 8 (ma 24.2.2025)
+
+`TODO` 
+
