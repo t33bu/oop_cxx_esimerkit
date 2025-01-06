@@ -4,7 +4,11 @@ Esimerkkikoodit luennoilta.
 `Hox! Esimerkit päivittyvät kurssin edetessä.`
 
 ## Luento 1 (ti 7.1.2025)
-viikkotehtava1.cpp - Esimerkki miten satunnaislukugeneraattori alustetaan ja käytetään
+averagearray.cpp - Esimerkki oman funktion laatimisesta ja tekoälyn vaaroista
+
+printletters.cpp - Esimerkki olioiden toiminnallisuuksien käytöistä ja hyödyistä
+
+viikkotehtava1.cpp - Esimerkki viikkotehtävää varten miten satunnaislukugeneraattori alustetaan ja sitä käytetään
 
 ## Luento 2 (ma 13.1.2025)
 Postilaatikko - Luentokalvoissa esitelty Postilaatikko-luokka
