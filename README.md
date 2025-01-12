@@ -11,6 +11,9 @@ printletters.cpp - Esimerkki olioiden toiminnallisuuksien käytöistä ja hyödy
 viikkotehtava1.cpp - Esimerkki viikkotehtävää varten miten satunnaislukugeneraattori alustetaan ja sitä käytetään
 
 ## Luento 2 (ma 13.1.2025)
+
+Pankkitili  - Luennoilla käsitelty esimerkki (Lisätty 12.1.2025)
+
 Postilaatikko - Luentokalvoissa esitelty Postilaatikko-luokka
 
 Mittari - Luentokalvoissa esitelty Mittari-luokka, sisältäen DHT- ja LCD-luokat
