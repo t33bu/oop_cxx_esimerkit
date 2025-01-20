@@ -2,8 +2,15 @@
 
 A::A()
 {
-    cout << "A konstruktori" << endl;
-    variable_A = 67;
+    cout << "A defaultkonstruktori" << endl;
+    variable_A = -1;
+    cout << "variable_A=" << variable_A << endl;
+}
+
+A::A(int a) 
+{
+    cout << "A konstruktori, parametri a=" << a << endl;
+    variable_A = a;
     cout << "variable_A=" << variable_A << endl;
 }
 
@@ -14,15 +21,18 @@ A::~A()
 
 void A::public_A()
 {
-    cout << "public A" << endl;
+    cout  << "Kutsuttiin public A, "
+          << "variable_A=" << variable_A << endl;
 }
 
 void A::protected_A()
 {
-    cout << "protected A" << endl;
+    cout  << "Kutsuttiin protected A, "
+          << "variable_A=" << variable_A << endl;
 }
 
 void A::private_A()
 {
-    cout << "private A" << endl;
+    cout  << "Kutsuttiin private A, "
+          << "variable_A=" << variable_A << endl;
 }

@@ -10,10 +10,15 @@ class B: public A
 {
 public:
     B();
+    B(int b);
+    B(int b, int a);
     ~B();
 
     void public_B();
-    void funcs_A();
+    void allfuncs_A();
+
+protected:
+    int variable_B;
 };
 
 #endif // B_H

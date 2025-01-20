@@ -9,6 +9,7 @@ class A
 {
 public:
     A();
+    A(int a);
     ~A();
 
     void public_A();
