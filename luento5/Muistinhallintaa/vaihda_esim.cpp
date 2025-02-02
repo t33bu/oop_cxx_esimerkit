@@ -2,9 +2,10 @@
 
 using namespace std;
 
-// versio: pass by reference
-// void vaihda(short &va, short &vb)
-// Versio: pass by value
+// Hyvä tietää koodiesimerkki !!
+// Kts. https://www.geeksforgeeks.org/pointers-vs-references-cpp/
+
+// versio 1: pass by value (ei toimi)
 void vaihda(short va, short vb)
 {
     cout << "va:n osoite muistissa: " << &va << endl;
@@ -15,7 +16,19 @@ void vaihda(short va, short vb)
     vb = temp;
 }
 
-// Versio: käytä osoittimia
+// versio 2 : pass by reference (viittauksia, toimii)
+void vaihda(short &va, short &vb)
+{
+    cout << "va:n osoite muistissa: " << &va << endl;
+    cout << "vb:n osoite muistissa: " << &vb << endl;
+
+    short temp = va;
+    va = vb;
+    vb = temp;
+}
+
+
+// Versio 3: käyttää osoittimia (toimii)
 void osoitinVaihda(short *va, short *vb)
 {
     cout << "osoittimen va osoite muistissa: " << &va << endl;
@@ -28,6 +41,7 @@ void osoitinVaihda(short *va, short *vb)
     *vb = temp;
 }
 
+/*
 int main()
 {
     short a = 27;
@@ -40,6 +54,7 @@ int main()
 
     // pass by value ei toimi c/c++:ssä.
     // vaihda(a,b);
+
     // osoittimia käyttäessä muuttujien osoitteet parametriksi
     osoitinVaihda(&a,&b);
 
@@ -47,4 +62,4 @@ int main()
 
     return 0;
 }
-
+*/

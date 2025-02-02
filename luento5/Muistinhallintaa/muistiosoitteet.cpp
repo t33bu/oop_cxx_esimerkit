@@ -1,49 +1,72 @@
 #include <iostream>
+// Uusi otsikkotiedosto smart pointerien käyttöön
+#include <memory>
 
 using namespace std;
 
 // luokan esittely
-class C {
-
+class Muistiesimerkki
+{
 public:
-    C();
-    int c_muuttuja;
-    double jotaki;
-    int c_toinen;
+    void tulosta()
+    {
+        cout << "eka=" << eka
+             << ", toka=" << toka
+             << ", jotaki=" << jotaki
+             << endl;
+    }
+
+    int eka; //  = 0;
+    int toka; // = 0;
+    double jotaki; // = 0;
 };
 
-C::C() : c_muuttuja(22), c_toinen(33), jotaki(1.1) {
-
-}
-
-/*
 int main()
 {
     int b = 42;
+
+    // osoitinmuuttuja esitellään *-operaattorilla
+    // &-operaattori antaa muuttujan osoitteen
     int *o_b = &b;
 
-    cout << "b:n arvo: " << b << endl;
-    cout << "b:n osoite muistissa: " << &b << endl;
-    cout << "o_b:n arvo: " << o_b << endl;
-    cout << "o_b:n osoituksen arvo: " << *o_b << endl;
+    cout << "b = " << b << endl;
+    cout << "b:n osoite: " << &b << endl;
+    cout << "o_b = " << o_b << endl;
+    cout << "o_b:n osoittaa arvoon: " << *o_b << endl;
+    cout << "o_b:n osoite: " << &o_b << endl;
+    cout << endl;
 
-    int b = 42;
-    cout << "b:n arvo: " << b << endl;
-    cout << "b:n osoite muistissa: " << &b << endl;
+    // Muutetaan b:n arvo osoittimen avulla
+    *o_b = 27;
+    cout << "Uusi b:n arvo osoittimella: " << b << endl;
+    cout << endl;
 
     float d = 1.234;
-    cout << "d:n arvo: " << d << endl;
-    cout << "d:n osoite muistissa: " << &d << endl;
+    cout << "d = " << d << endl;
+    cout << "d:n osoite: " << &d << endl;
+    cout << endl;
 
-    C c;
-    cout << "Olion c osoite muistissa: " << &c << endl;
-    cout << "c.c_muuttuja:n arvo: " << c.c_muuttuja << endl;
-    cout << "c.c_muuttuja:n osoite: " << &c.c_muuttuja << endl;
-    cout << "c.c_toinen:n arvo: " << c.c_toinen << endl;
-    cout << "c.c_toinen:n osoite: " << &c.c_toinen << endl;
+    // Luodaan olio staattisesti
+    Muistiesimerkki me;
+    cout << "Olion me osoite: " << &me << endl;
+    cout << "eka osoite: " << &me.eka << endl;
+    cout << "toka osoite: " << &me.toka << endl;
+    cout << "jotaki osoite: " << &me.jotaki << endl;
+    me.tulosta();
+    cout << endl;
 
-    cout << "c.jotaki:n osoite: " << &c.jotaki << endl;
+    // Luodaan olio dynaamisesti new-operaattorilla
+    Muistiesimerkki *dyn_me = new Muistiesimerkki();
+    // nyt jäsenfunktioita kutsutaan nuoli-operaattori
+    dyn_me->tulosta();
+    // Tuhotaan olio muistista
+    delete dyn_me;
+
+    // Hyvä tietää !!
+    // Luodaan olio smart pointerilla (vaatii c++ v14)
+    unique_ptr<Muistiesimerkki> smart_me = make_unique<Muistiesimerkki>();
+    smart_me->tulosta();
+    // Nyt ei oliota tarvitse tuhota!
 
     return 0;
 }
-*/
