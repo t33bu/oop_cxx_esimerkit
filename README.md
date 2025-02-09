@@ -56,8 +56,3 @@ QtMittari - Perinteinen Mittari-esimerkki toteutettuna signal/slot-mekanismillä
 ## Luento 8 (ma 24.2.2025)
 
 `TODO` 
-
-## Luento 8 (ma 24.2.2025)
-
-`TODO` 
-
