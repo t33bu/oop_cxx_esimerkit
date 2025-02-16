@@ -8,7 +8,7 @@ class QtOlio : public QObject
 {
     Q_OBJECT
 public:
-    explicit QtOlio(QObject *parent = nullptr);
+    explicit QtOlio(QObject *parent = nullptr, QString n="");
     void laheta(void);
     void lahetaParametri(int p);
 
@@ -20,6 +20,9 @@ public slots:
 signals:
     void mySignal();
     void myParameterSignal(int s);
+
+private:
+    QString nimi;
 };
 
 #endif // QTOLIO_H

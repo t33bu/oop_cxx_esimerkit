@@ -1,29 +1,30 @@
 #include "qtolio.h"
 
-QtOlio::QtOlio(QObject *parent)
+QtOlio::QtOlio(QObject *parent, QString n)
     : QObject{parent}
 {
-    qDebug() << "QtOlio konstruktori";
+    nimi = n;
+    qDebug() << "QtOlio " << nimi << " konstruktori";
 }
 
 void QtOlio::laheta()
 {
-    qDebug() << "QtOlio lähetä mySignal";
+    qDebug() << "QtOlio " << nimi << " lähetä mySignal";
     emit mySignal();
 }
 
 void QtOlio::lahetaParametri(int p)
 {
-    qDebug() << "QtOlio lähetä myParameterSignal p=" << p;
+    qDebug() << "QtOlio " << nimi << " lähetä myParameterSignal p=" << p;
     emit myParameterSignal(p);
 }
 
 void QtOlio::mySlot()
 {
-    qDebug() << "QtOlio mySlot, vastaanotti signaalin";
+    qDebug() << "QtOlio " << nimi << " vastaanotti signaalin";
 }
 
 void QtOlio::myParameterSlot(int s)
 {
-    qDebug() << "QtOLio myParameterSlot, vastaanotti s=" << s << Qt::endl;
+    qDebug() << "QtOLio " << nimi << " vastaanotti singaalin, parametri s=" << s << Qt::endl;
 }

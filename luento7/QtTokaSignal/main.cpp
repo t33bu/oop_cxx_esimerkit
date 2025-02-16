@@ -5,8 +5,8 @@
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    QtOlio o(&a);
-    QtOlio p(&a);
+    QtOlio o(&a,"O");
+    QtOlio p(&a,"P");
 
     qDebug() << "main kytketään o:n mySignal -> p:n mySlot";
     QObject::connect(&o,               // lähettävä olio

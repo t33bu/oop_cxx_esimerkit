@@ -2,12 +2,12 @@
 
 QtLCD::QtLCD(QObject *parent) : QObject{parent}
 {
-    qDebug() << "DHT konstruktori";
+    qDebug() << "LCD konstruktori" << Qt::endl;
 }
 
 QtLCD::~QtLCD()
 {
-    qDebug() << "DHT destruktori";
+    qDebug() << "LCD destruktori";
 }
 
 void QtLCD::printSlot(float temperature)
