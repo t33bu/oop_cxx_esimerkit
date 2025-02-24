@@ -45,13 +45,7 @@ Esimerkkejä STL:n käytöstä muuttujien ja olioiden kanssa.
 
 ## Luento 7 (ma 17.2.2025)
 
-QtConsoleExample - Qt-konsolisovellus joka ei tee mitään
-
-QtEkaSignal - Qt-olio lähettää signaalin itselleen
-
-QtTokaSignal - Qt-oliot lähettävät signaaleja toisilleen
-
-QtMittari - Perinteinen Mittari-esimerkki toteutettuna signal/slot-mekanismillä
+`TODO` 
 
 ## Luento 8 (ma 24.2.2025)
 
