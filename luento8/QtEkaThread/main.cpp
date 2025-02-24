@@ -1,7 +1,6 @@
 #include <QCoreApplication>
 
 #include "ekathread.h"
-#include "tokathread.h"
 
 int main(int argc, char *argv[])
 {
