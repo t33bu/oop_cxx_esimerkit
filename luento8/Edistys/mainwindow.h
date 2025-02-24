@@ -19,7 +19,8 @@ public:
     ~MainWindow();
 
 public slots:
-    void updateSlot();
+    void progressUpdateSlot();
+    void on_singleShot_clicked();
 
 private:
     Ui::MainWindow *ui;

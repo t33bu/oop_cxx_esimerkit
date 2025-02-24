@@ -8,10 +8,10 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    /*
-    QTimer timer;
-    timer.setInterval(1000);
-    timer.start();
+    /* Kerran pyörähtävä ajastin, joka suorittaa lambda-funktion
+    QTimer::singleShot(1000, []{
+        qDebug("Hello from lambda");
+    });
     */
 
     return a.exec();

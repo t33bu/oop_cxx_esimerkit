@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     timer->setInterval(1000);
     timer->start();
     // kytketaan ajastinsignaali progressbarin updateen
-    connect(timer, &QTimer::timeout,this, &MainWindow::updateSlot);
+    connect(timer, &QTimer::timeout,this, &MainWindow::progressUpdateSlot);
 }
 
 MainWindow::~MainWindow()
@@ -31,7 +31,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::updateSlot()
+void MainWindow::progressUpdateSlot()
 {
     // paivitetaan tyota
     tyo += 10;
@@ -46,3 +46,12 @@ void MainWindow::updateSlot()
         ui->statusbar->showMessage("Tyo valmis!");
     }
 }
+
+void MainWindow::on_singleShot_clicked()
+{
+    // Kerran pyörähtävä ajastin lambdafunktiolla
+    QTimer::singleShot(1000, []{
+        qDebug("Single shot timer!");
+    });
+}
+
