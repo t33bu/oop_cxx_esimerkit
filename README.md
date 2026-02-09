@@ -43,6 +43,10 @@ VakioPostilaatikko - Postilaatikko-luentoesimerkin toteutus static-jäsenillä
 
 Esimerkkejä STL:n käytöstä muuttujien ja olioiden kanssa.
 
+Container - Miten templatea käytetään olion ja muuttujan kanssa
+
+Henkilo - Esimerkki luentokalvoista säiliön käyttämisestä
+
 ## Luento 7 (ma 17.2.2025)
 
 `TODO` 
