@@ -15,7 +15,7 @@ public:
     }
 };
 
-int mainasds() {
+int main() {
 
     vector<Henkilo> ryhma;
 
@@ -44,4 +44,5 @@ int mainasds() {
         cout << it->nimi << " on " << it->ika << " vuotta vanha" << endl;
     }
 }
+
 
